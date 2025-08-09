@@ -104,7 +104,7 @@
         if (!magnet) return alert('Magnet link is missing. Please paste a magnet link.');
 
         try {
-            const res = await fetch('https://api.real-debrid.com/rest/1.0/torrents/addMagnet', {
+            const res = await fetch('/api/torrents/addMagnet', {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${token}`,
@@ -137,7 +137,7 @@
         const file = fileInput.files[0];
 
         try {
-            const res = await fetch('https://api.real-debrid.com/rest/1.0/torrents/addTorrent', {
+            const res = await fetch('/api/torrents/addTorrent', {
                 method: 'PUT',
                 headers: {
                     'Authorization': `Bearer ${token}`
