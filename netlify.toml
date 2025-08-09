@@ -1,0 +1,7 @@
+# Netlify 리디렉션 및 프록시 규칙
+[[redirects]]
+  # /api/ 로 시작하는 모든 요청을 Real-Debrid API로 전달합니다.
+  from = "/api/*"
+  to = "https://api.real-debrid.com/rest/1.0/:splat"
+  status = 200
+  force = true # 강제 실행
