@@ -2,8 +2,12 @@
   "name": "Real-Debrid Manager",
   "short_name": "RD Manager",
   "description": "A simple manager for Real-Debrid magnet links and torrents.",
-  "start_url": ".",
+  "lang": "en-US",
+  "start_url": "./index.html",
   "display": "standalone",
+  "orientation": "portrait",
+  "id": "/?v=1",
+  "scope": "/",
   "background_color": "#f4f4f4",
   "theme_color": "#007bff",
   "icons": [
@@ -17,7 +21,7 @@
       "src": "./icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "maskable"
     }
   ]
 }
